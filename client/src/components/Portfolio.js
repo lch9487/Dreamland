@@ -1,7 +1,10 @@
-import React from 'react';
+import React from "react";
 
 export default () => {
   return (
-    <a href="/youtube">Youtube</a>  
+    <div>
+      <a href="/youtube">Youtube</a>
+      <a href="/weather">Weather</a>
+    </div>
   );
 };
