@@ -1,61 +1,59 @@
 import React, { Component } from "react";
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default class Header extends Component {
   render() {
     return (
-      <nav id="mainNav" className="navbar navbar-default navbar-fixed-top">
-        <div className="container-fluid">
-          <div className="navbar-header">
-            <button
-              type="button"
-              className="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#bs-example-navbar-collapse-1"
-            >
-              <span className="sr-only">Toggle navigation</span> Menu
-              <i className="fa fa-bars" />
-            </button>
-            <a className="navbar-brand page-scroll" href="#page-top">
-              LIU CHIH-HOU
+      <Navbar style={{ marginBottom: "0" }} inverse collapseOnSelect fixedTop>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <a href="https://rocky-fortress-51379.herokuapp.com/">
+              LIU CHIH HOU
             </a>
-          </div>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Navbar.Text pullRight>
+            <Navbar.Link
+              style={{ textDecoration: "none" }}
+              href="https://www.cakeresume.com/lch9487"
+              target="_blank"
+            >
+              About
+            </Navbar.Link>
+          </Navbar.Text>
 
-          <div
-            className="collapse navbar-collapse"
-            id="bs-example-navbar-collapse-1"
-          >
-            <ul className="nav navbar-nav navbar-right">
-              <li>
-                <a className="page-scroll" href="#about">
-                  About
-                </a>
-              </li>
-              <li>
-                <a className="page-scroll" href="#services">
-                  Services
-                </a>
-              </li>
-
-              <li className="dropdown">
-                <a className="page-scroll" href="#portfolio">
-                  Portfolio
-                </a>
-
-                <div className="dropdown-content">
-                  <a href="FloppingCards.html">FloppingCards</a> <a>Link 2</a>{" "}
-                  <a>Link 3</a>
-                </div>
-              </li>
-
-              <li>
-                <a className="page-scroll" href="#contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+          <Nav pullRight>
+            <NavDropdown
+              eventKey={2}
+              title="Portfolio"
+              noCaret
+              id="basic-nav-dropdown"
+            >
+              <MenuItem
+                eventKey={2.1}
+                href="https://rocky-fortress-51379.herokuapp.com/youtube"
+              >
+                Youtube
+              </MenuItem>
+              <MenuItem
+                eventKey={2.2}
+                href="https://rocky-fortress-51379.herokuapp.com/weather"
+              >
+                Weather
+              </MenuItem>
+              <MenuItem
+                eventKey={2.3}
+                href="https://protected-dawn-64940.herokuapp.com/"
+              >
+                Emaily
+              </MenuItem>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 }

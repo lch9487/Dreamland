@@ -1,0 +1,70 @@
+body, html, div {
+    height: 100%;
+    margin: 0;
+}
+/*
+[data-reactroot]
+        {height: 100% !important; }
+*/
+.bg {
+    /* The image used */
+    background-image: url("../img/game-of-thrones.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.bg .header-content {
+  position: relative;
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+}
+.bg .header-content .header-content-inner h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 160px;
+  margin-bottom: 0;
+  font-size: 50px;
+}
+.bg .header-content .header-content-inner {
+  margin: 30px auto;
+}
+.bg .header-content .header-content-inner p {
+  font-weight: 300;
+/*   color: rgba(255, 255, 255, 0.7); */
+  color: white;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.btn-primary {
+  color: white;
+  background-color: #F05F40 !important;
+  border-color: #F05F40 !important;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: white;
+  background-color: #ee4b28 !important;
+  border-color: #ed431f !important;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
