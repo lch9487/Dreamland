@@ -9,8 +9,8 @@ export default () => {
     <section className="no-padding" id="portfolio">
 		<div className="container-fluid">
 			<div className="row no-gutter popup-gallery">
-				<div className="col-lg-4 col-sm-6">
-					<a href="https://rocky-fortress-51379.herokuapp.com/youtube"
+				<div className="col-lg-4 col-sm-6 portfolio">
+					<a href="/youtube"
 						className="portfolio-box"> <img
 						src={Youtube}
 						className="img-responsive" alt="youtube" />
@@ -22,8 +22,8 @@ export default () => {
 						</div>
 					</a>
 				</div>
-				<div className="col-lg-4 col-sm-6">
-					<a href="https://rocky-fortress-51379.herokuapp.com/weather" className="portfolio-box"> <img
+				<div className="col-lg-4 col-sm-6 portfolio">
+					<a href="/weather" className="portfolio-box"> <img
 						src={Weather}
 						className="img-responsive" alt="weather" />
 						<div className="portfolio-box-caption">
@@ -34,7 +34,7 @@ export default () => {
 						</div>
 					</a>
 				</div>
-				<div className="col-lg-4 col-sm-6">
+				<div className="col-lg-4 col-sm-6" portfolio>
 					<a href="https://protected-dawn-64940.herokuapp.com/" className="portfolio-box"> <img
 						src={Emaily}
 						className="img-responsive" alt="emaily" />

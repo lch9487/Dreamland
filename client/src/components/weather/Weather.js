@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SearchBar from "./SearchBar";
 import WeatherList from "./WeatherList";
+import '../../style/weather.css';
 
 export default class App extends Component {
   render() {

@@ -2,10 +2,10 @@ body, html, div {
     height: 100%;
     margin: 0;
 }
-/*
+
 [data-reactroot]
         {height: 100% !important; }
-*/
+
 .bg {
     /* The image used */
     background-image: url("../img/game-of-thrones.jpg");
